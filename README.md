@@ -59,13 +59,26 @@ When the badge is set to animations 1-5, you can hold down touch controls 3,4, o
 
 All thes commands were built around LonghornEngineer's Doom Guy SAO. (https://github.com/LonghornEngineer/DOOM_SAO)
 
+#### Adjust Health
 
+- Touch Control 3 to get into Health Adjustment mode (blinking Green light)
+- Adjust health up and down with touch controls 6 and 7 (5 levels)
 
+#### Adjust Anger
 
-### Serial Control
+- Touch Control 4 to get into Anger Adjustment mode (blinking Red light)
+- Adjust health up and down with touch controls 6 and 7 (5 levels)
+
+#### Doom Guy Secret
+
+- ???? (Blinking Blue light)
+
+### Serial Feedback
 
 screen /dev/tty.SLAB_USBtoUART 115200
 
-### DC27-29 Notes
+### Arduino Programing
 
-If you received a Pixel Badge 2 between DC27-29 (2019-21) there's a good chance you have an early firmware version that allowed for sending I2C commands to capable SAOs (Mainly the Doom guy SAO). This mode can be recognized by a LED 1 blinking green. 
+This board can be directly programmed with the Arduino IDE. You need to add this additional boards manager URL "https://dl.espressif.com/dl/package_esp32_index.json" and then search for and install "esp32" in the Arduino boards manager. You can then select the "Hornbill ESP32 Dev" board, "115200" for upload speed and the corresponding port that the badge is on. The badge has circuitry to automatically go into bootloader mode so it should receive the code you enter and upload from Arduino IDE. I've noticed the LEDs turn full white throughout the upload. I've had mixed results with uploading from MacOS and better luck from a windows 10 system. 
+
+Alternate Instructions for adding ESP32 boards to Arduino (https://techexplorations.com/guides/esp32/begin/idewin/)
