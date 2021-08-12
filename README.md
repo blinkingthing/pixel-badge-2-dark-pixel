@@ -90,5 +90,5 @@ Recommended library and board versions:
 
 Recommended upload settings:
 - Board : Hornbill ESP32 Dev
-- Upload Speed : 15200
+- Upload Speed : 115200
 - Flash Frequency : 40Mhz 
