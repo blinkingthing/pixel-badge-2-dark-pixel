@@ -79,6 +79,16 @@ screen /dev/tty.SLAB_USBtoUART 115200
 
 ### Arduino Programing
 
-This board can be directly programmed with the Arduino IDE. You need to add this additional boards manager URL "https://dl.espressif.com/dl/package_esp32_index.json" and then search for and install "esp32" in the Arduino boards manager. You can then select the "Hornbill ESP32 Dev" board, "115200" for upload speed and the corresponding port that the badge is on. The badge has circuitry to automatically go into bootloader mode so it should receive the code you enter and upload from Arduino IDE. I've noticed the LEDs turn full white throughout the upload. I've had mixed results with uploading from MacOS and better luck from a windows 10 system. 
+This board can be directly programmed with the Arduino IDE. You need to add this additional boards manager URL "https://dl.espressif.com/dl/package_esp32_index.json" and then search for and install "esp32" in the Arduino boards manager. You can then select the "Hornbill ESP32 Dev" board, "115200" for upload speed and the corresponding port that the badge is on. The badge has circuitry to automatically go into bootloader mode so it should receive the code you enter and upload from Arduino IDE.
 
 Alternate Instructions for adding ESP32 boards to Arduino (https://techexplorations.com/guides/esp32/begin/idewin/)
+
+Recommended library and board versions: 
+- Adafruit NeoPixel Library v1.8.5 
+- esp32 by Espressif Systems version 1.0.6
+
+
+Recommended upload settings:
+- Board : Hornbill ESP32 Dev
+- Upload Speed : 15200
+- Flash Frequency : 40Mhz 
