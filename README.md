@@ -21,7 +21,7 @@ Pixel Badge 2 has three LEDs with pre-programmed animations that can be altered 
 
 ### Touch Controls
 
-![Image of touch controls](images/touch-controls.png)
+![Image of touch controls](touch-controls.png)
 
 1. Change Animation Left
 2. Change Animation Right
